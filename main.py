@@ -16,7 +16,7 @@ logging.basicConfig(
 )
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    print(context.user_data)
+    # print(context.user_data)
     _text = "سلام! من نردانلم. لطفا پیام خود را بگذارید!"
     await context.bot.send_message(chat_id=update.effective_chat.id, text=_text)
 
